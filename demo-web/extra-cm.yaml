@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: torlendo-teszt
-data:
-  megjegyzes: "ezt mindjart toroljuk"
