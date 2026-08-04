@@ -5,6 +5,8 @@ namespace: minishop-kristof
 resources:
   - deployment-web.yaml
   - service-web.yaml
+  - deployment-redis.yaml
+  - service-redis.yaml
   
 configMapGenerator:
   - name: minishop-kristof-config
