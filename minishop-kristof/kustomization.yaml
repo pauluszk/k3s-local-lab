@@ -13,4 +13,4 @@ configMapGenerator:
     literals:
       - PODINFO_UI_COLOR=#34577c
       - PODINFO_UI_MESSAGE=Elso verzio - GitOps labor
-      # - CACHE_URL=
+      - CACHE_URL=minishop-kristof-redis
