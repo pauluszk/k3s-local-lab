@@ -22,7 +22,7 @@ spec:
             - configMapRef:
                 name: minishop-kristof-config # a nevét a kustomize írja át – lásd lentebb
             - secretRef:
-                name: minishop-kristof-secret
+                name: app-secret
           readinessProbe:
             httpGet:
               path: /readyz
