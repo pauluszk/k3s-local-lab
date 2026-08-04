@@ -8,6 +8,6 @@ resources:
 
 configMapGenerator:
   - name: demo-web-config
-  literals:
-    - PODINFO_UI_COLOR=#34577c
-    - PODINFO_UI_MESSAGE=Elso verzio - GitOps labor
+    literals:
+      - PODINFO_UI_COLOR=#34577c
+      - PODINFO_UI_MESSAGE=Elso verzio - GitOps labor
