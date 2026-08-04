@@ -12,6 +12,6 @@ resources:
 configMapGenerator:
   - name: minishop-kristof-config
     literals:
-      - PODINFO_UI_COLOR=#34577c
+      - PODINFO_UI_COLOR=#00FFDF
       - PODINFO_UI_MESSAGE=Kristof Labor
       - CACHE_URL=minishop-kristof-redis
