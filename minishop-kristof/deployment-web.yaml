@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minishop-kristof
+  name: minishop-kristof-web
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: minishop-kristof
+      app: minishop-kristof-web
   template:
     metadata:
       labels:
-        app: minishop-kristof
+        app: minishop-kristof-web
     spec:
       containers:
         - name: podinfo
