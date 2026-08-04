@@ -17,7 +17,7 @@ spec:
           image: redis:7.4-alpine
           ports:
             - name: http
-              containerPort: 9898
+              containerPort: 6379
           envFrom:
             - configMapRef:
                 name: minishop-kristof-config # a nevét a kustomize írja át – lásd lentebb
