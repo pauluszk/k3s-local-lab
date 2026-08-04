@@ -13,6 +13,6 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: demo-web
+              name: argocd
               port:
                 number: 80 # a Service portja, NEM a konténer portja
