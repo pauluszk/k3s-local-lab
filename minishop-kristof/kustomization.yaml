@@ -5,7 +5,6 @@ namespace: minishop-kristof
 resources:
   - deployment.yaml
   - service.yaml
-  - ingress.yaml
   
 configMapGenerator:
   - name: minishop-kristof-config
