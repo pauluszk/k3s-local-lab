@@ -5,8 +5,7 @@ namespace: demo
 resources:
   - deployment.yaml
   - service.yaml
-  - extra-cm.yaml
-  
+
 configMapGenerator:
   - name: demo-web-config
     literals:
