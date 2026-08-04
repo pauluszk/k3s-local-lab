@@ -3,11 +3,12 @@ kind: Kustomization
 namespace: minishop-kristof
 
 resources:
-  - deployment.yaml
-  - service.yaml
+  - deployment-web.yaml
+  - service-web.yaml
   
 configMapGenerator:
   - name: minishop-kristof-config
     literals:
       - PODINFO_UI_COLOR=#34577c
       - PODINFO_UI_MESSAGE=Elso verzio - GitOps labor
+      # - CACHE_URL=
