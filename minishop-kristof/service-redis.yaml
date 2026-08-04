@@ -6,6 +6,6 @@ spec:
   selector:
     app: minishop-kristof-redis
   ports:
-    - name: http
-      port: 80
-      targetPort: http
+    - name: redis
+      port: 6379
+      targetPort: redis
