@@ -22,14 +22,18 @@ spec:
             - configMapRef:
                 name: minishop-kristof-config # a nevét a kustomize írja át – lásd lentebb
           readinessProbe:
-            httpGet:
-              path: /readyz
-              port: http
+            exec:
+              command:
+                - redis-cli
+                - ping
+            initialDelaySeconds: 5
             periodSeconds: 5
           livenessProbe:
-            httpGet:
-              path: /healthz
-              port: http
+            exec:
+              command:
+                - redis-cli
+                - ping
+            initialDelaySeconds: 15
             periodSeconds: 15
           resources:
             requests:
