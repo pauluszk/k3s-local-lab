@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minishop-kristof
+spec:
+  ingressClassName: nginx # NÉLKÜLE az nginx figyelmen kívül hagyja!
+  rules:
+    - host: kristof.lab.local
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: minishop-kristof-web
+              port:
+                number: 80 # a Service portja, NEM a konténer portj
