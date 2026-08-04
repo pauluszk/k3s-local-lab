@@ -21,6 +21,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: minishop-kristof-config # a nevét a kustomize írja át – lásd lentebb
+            - secretRef:
+                name: minishop-kristof-secret
           readinessProbe:
             httpGet:
               path: /readyz
