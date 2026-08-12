@@ -9,6 +9,7 @@ resources:
   - service-redis.yaml
   - ingress.yaml
   - app-secret.yaml
+  - service-monitor.yaml
   
 configMapGenerator:
   - name: minishop-kristof-config
