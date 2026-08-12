@@ -12,7 +12,7 @@ spec:
 
   namespaceSelector:
     matchNames:
-      - podinfo
+      - minishop-kristof-web
 
   endpoints:
     - port: http
