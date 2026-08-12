@@ -12,7 +12,7 @@ spec:
 
   namespaceSelector:
     matchNames:
-      - minishop-kristof-web
+      - minishop-kristof
 
   endpoints:
     - port: http
